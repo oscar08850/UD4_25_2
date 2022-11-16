@@ -8,7 +8,7 @@ create table departamentos(
 	);
 
 create table empleados(
-	dni varchar(9) PRIMARY KEY,
+	dni varchar(8) PRIMARY KEY,
 	nombre varchar(100),
 	apellidos varchar (100),
 	departamento_id int,
@@ -25,7 +25,7 @@ insert into fabricantes (nombre,presupuesto) values('Departamento 5' , 50000);
 
 
 
-insert into articulos (dni, nombre, apellidos, departamento_id) values('11111111A','Pedro', 'Sanchez', '1');
-insert into articulos (dni, nombre, apellidos, departamento_id) values('22222222B','Mariano', 'Rajoy', '2');
-insert into articulos (dni, nombre, apellidos, departamento_id) values('33333333C','Pablo', 'Iglesias', '3');
-insert into articulos (dni, nombre, apellidos, departamento_id) values('44444444D','Juan', 'Ca', '2');
+insert into articulos (dni, nombre, apellidos, departamento_id) values('1111111A','Pedro', 'Sanchez', '1');
+insert into articulos (dni, nombre, apellidos, departamento_id) values('2222222B','Mariano', 'Rajoy', '2');
+insert into articulos (dni, nombre, apellidos, departamento_id) values('3333333C','Pablo', 'Iglesias', '3');
+insert into articulos (dni, nombre, apellidos, departamento_id) values('4444444D','Juan', 'Ca', '2');
