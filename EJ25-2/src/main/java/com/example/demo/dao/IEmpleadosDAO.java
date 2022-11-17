@@ -7,6 +7,6 @@ import com.example.demo.dto.Empleados;
 
 public interface IEmpleadosDAO extends JpaRepository<Empleados, String> {
 	
-	Empleados findByDni(String dni);
+	//Empleados findByDni(String dni);
 
 }

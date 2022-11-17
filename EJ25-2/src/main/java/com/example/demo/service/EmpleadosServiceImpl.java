@@ -30,9 +30,13 @@ public class EmpleadosServiceImpl implements IEmpleadosService{
 	@Override
 	public Empleados leerEmpleadoByDni(String dni) {
 		
-		return iEmpleadoDAO.findByDni(dni);
+		//return iEmpleadoDAO.findByDni(dni);
+		
+		return iEmpleadoDAO.findById(dni).get();
+		
+		
+		//Usuario usuario = iUsuarioDAO.findByUsername(username);
 		/*
-		Usuario usuario = iUsuarioDAO.findByUsername(username);
 		System.out.println("Leemos empleado por dni: " + dni);
 		List<Empleados> aux = iEmpleadoDAO.findAll();
 		System.out.println(aux);
