@@ -67,9 +67,6 @@ public class Departamentos {
 		this.presupuesto = presupuesto;
 	}
 
-	public List<Empleados> getEmpleados() {
-		return empleados;
-	}
 
 	public void setEmpleados(List<Empleados> empleados) {
 		this.empleados = empleados;
@@ -77,7 +74,7 @@ public class Departamentos {
 	
 	@JsonIgnore
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "departamento_id")
-	public List<Empleados> getDepartamento_id() {
+	public List<Empleados> getEmpleados_id() {
 		return empleados;
 	}
 
