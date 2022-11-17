@@ -37,12 +37,13 @@ public class ControladorEmpleados {
 	public Empleados leerEmpleado(@PathVariable(name = "dni") String dni) {
 
 		Empleados empleado = new Empleados();
+		
 
 		empleado = empleadosServiceImpl.leerEmpleadoByDni(dni);
 
 		System.out.println("Empleado con ese dni es: " + empleado);
-
-		return empleado;
+		//return null;
+		return empleado; // PETA AQUIIII
 	}
 
 	@PutMapping("/empleados/{dni}")

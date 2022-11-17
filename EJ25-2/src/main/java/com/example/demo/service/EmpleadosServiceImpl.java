@@ -24,16 +24,26 @@ public class EmpleadosServiceImpl implements IEmpleadosService{
 	public Empleados crearEmpleado(Empleados empleado) {
 		return iEmpleadoDAO.save(empleado);
 	}
+	
+	
 
 	@Override
 	public Empleados leerEmpleadoByDni(String dni) {
+		
+		return iEmpleadoDAO.findByDni(dni);
+		/*
+		Usuario usuario = iUsuarioDAO.findByUsername(username);
+		System.out.println("Leemos empleado por dni: " + dni);
 		List<Empleados> aux = iEmpleadoDAO.findAll();
+		System.out.println(aux);
 		for (Empleados empleado : aux) {
+			System.out.println(empleado.getDni() + "   " + dni );
 			if(empleado.getDni().equals(dni)) {
+				System.out.println(empleado);
 				return empleado;
 			}
 		}
-		return null;
+		*/
 	}
 
 

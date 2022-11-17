@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 public class Empleados {
 
-	// Atributos de la entidad Fabricante
+	// Atributos de la entidad Empleados
 	@Id
 	private String dni;
 	private String nombre;

@@ -17,15 +17,15 @@ create table empleados(
     
 
 
-insert into fabricantes (nombre,presupuesto) values('Departamento 1' , 10000);
-insert into fabricantes (nombre,presupuesto) values('Departamento 2' , 20000);
-insert into fabricantes (nombre,presupuesto) values('Departamento 3' , 30000);
-insert into fabricantes (nombre,presupuesto) values('Departamento 4' , 40000);
-insert into fabricantes (nombre,presupuesto) values('Departamento 5' , 50000);
+insert into departamentos (nombre,presupuesto) values('Departamento 1' , 10000);
+insert into departamentos (nombre,presupuesto) values('Departamento 2' , 20000);
+insert into departamentos (nombre,presupuesto) values('Departamento 3' , 30000);
+insert into departamentos (nombre,presupuesto) values('Departamento 4' , 40000);
+insert into departamentos (nombre,presupuesto) values('Departamento 5' , 50000);
 
 
 
-insert into articulos (dni, nombre, apellidos, departamento_id) values('1111111A','Pedro', 'Sanchez', '1');
-insert into articulos (dni, nombre, apellidos, departamento_id) values('2222222B','Mariano', 'Rajoy', '2');
-insert into articulos (dni, nombre, apellidos, departamento_id) values('3333333C','Pablo', 'Iglesias', '3');
-insert into articulos (dni, nombre, apellidos, departamento_id) values('4444444D','Juan', 'Ca', '2');
+insert into empleados (dni, nombre, apellidos, departamento_id) values('1111111A','Pedro', 'Sanchez', '1');
+insert into empleados (dni, nombre, apellidos, departamento_id) values('2222222B','Mariano', 'Rajoy', '2');
+insert into empleados (dni, nombre, apellidos, departamento_id) values('3333333C','Pablo', 'Iglesias', '3');
+insert into empleados (dni, nombre, apellidos, departamento_id) values('4444444D','Juan', 'Ca', '2');
